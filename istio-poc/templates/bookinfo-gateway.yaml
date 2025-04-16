@@ -39,6 +39,10 @@ spec:
     route:
     - destination:
         host: "productpage"
+        trafficPolicy:
+          loadBalancer:
+            consistentHash:
+              useSourceIp: true
         subset: v1
         port:
           number: 9080
