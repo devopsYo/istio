@@ -48,6 +48,10 @@ istiod:
     replicaCount: 1
     rollingMaxSurge: 100%
     rollingMaxUnavailable: 25%
+
+  pilot:
+    enabled: true
+    enableValidationWebhook: false
   
     hub: ""
     tag: ""
