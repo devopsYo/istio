@@ -31,7 +31,7 @@ base:
       validationCABundle: ""
   
       # For istioctl usage to disable istio config crds in base
-      enableIstioConfigCRDs: true
+      enableIstioConfigCRDs: false
   
     defaultRevision: "default"
     experimental:
