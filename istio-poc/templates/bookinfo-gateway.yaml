@@ -39,10 +39,21 @@ spec:
     route:
     - destination:
         host: productpage
-        trafficPolicy:
-          loadBalancer:
-            consistentHash:
-              useSourceIp: true
+        subset: v1
+        port:
+          number: 9080
+    - destination:
+        host: reviews
+        subset: v1
+        port:
+          number: 9080
+    - destination:
+        host: ratings
+        subset: v1
+        port:
+          number: 9080
+    - destination:
+        host: details
         subset: v1
         port:
           number: 9080
