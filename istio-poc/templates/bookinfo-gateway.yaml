@@ -38,7 +38,7 @@ spec:
         prefix: /api/v1/products
     route:
     - destination:
-        host: "productpage"
+        host: productpage
         trafficPolicy:
           loadBalancer:
             consistentHash:
