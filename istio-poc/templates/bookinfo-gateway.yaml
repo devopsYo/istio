@@ -39,5 +39,6 @@ spec:
     route:
     - destination:
         host: productpage
+        subset: v1
         port:
           number: 9080
