@@ -16,6 +16,10 @@ spec:
         percentage:
           value: 100.0
         fixedDelay: 2s
+      abort:
+        percentage:
+          value: 100.0
+        httpStatus: 500
     route:
     - destination:
         host: ratings
